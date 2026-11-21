@@ -1,23 +1,54 @@
 
-# 202344070-FatimahAlqadihi-assignment1
+# 202344070-FatimahAlqadihi-assignment3
 
-# Personal Portfolio Website
 
-This project is a simple personal portfolio created for SWE363. Using HTML, CSS, and JavaScript.
+# Personal Portfolio Website - Assignment 3
 
-## How to Run Locally
-1. Download or clone the repository:
-2. https://github.com/Fatimah-alqadihi/202344070-fatemaAlqadihi-assignment2
+## Project Description
 
-3. Open the project folder in VS Code.
-4. Open `index.html` in your browser
+This project is a personal portfolio website developed for SWE Assignment 3. It showcases my projects, skills, and interests while demonstrating advanced web development concepts such as API integration, state management, responsive design, and interactive JavaScript features.
 
 ## Features
-- Clean and responsive layout (mobile-friendly)
-- Project cards with images
-- Dark mode toggle using JavaScript
-- Organized folder structure (HTML, CSS, JS, assets)
 
-## Ai use
+- Dark mode with saved preferences using Local Storage
+- Project details show/hide functionality
+- Project filtering by category
+- Project sorting by year
+- GitHub API integration with error handling
+- Responsive design for different screen sizes
 
-Microsoft Copilot was used to suggest a basic structure for the website and assist in resolving issues between HTML, CSS, and JavaScript.
+## Setup Instructions
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/USERNAME/REPOSITORY_NAME.git
+```
+
+2. Open the project folder.
+
+3. Open `index.html` in a web browser.
+
+No additional installation is required.
+
+## AI Usage Summary
+
+AI tools were used for:
+- JavaScript debugging
+- GitHub API integration
+- Filter and sorting functionality
+- Documentation support
+
+Detailed information is available in:
+
+```
+docs/ai-usage-report.md
+```
+
+## Live Website
+
+GitHub Pages: (https://github.com/Fatimah-alqadihi/202344070-FatimahAlqadihi-assignment3)
+
+## Author
+
+Fatimah Alqadihi
