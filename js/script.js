@@ -101,8 +101,8 @@ function updateProjects() {
     } else {
       project.style.display = "none";
     }
-  }
-
+  });
+  
   projects.sort((a, b) => {
     const yearA = parseInt(a.dataset.year);
     const yearB = parseInt(b.dataset.year);
@@ -113,7 +113,7 @@ function updateProjects() {
   });
 
   const container =
-    document.getElementById("projects");
+document.getElementById("project-list");
 
   projects.forEach(p => container.appendChild(p));
 }

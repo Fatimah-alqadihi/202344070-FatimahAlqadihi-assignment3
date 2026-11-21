@@ -29,20 +29,24 @@
     I am junior Integrated design student who enjoys web development, UX design, graphics, 3D modeling, and creative projects.
     I love experimenting with new tools just like building this portfolio.
   </p>
+  <section id="projects">
   
      <h2>Projects</h2>
      </section>
+     <div class="project-controls">
   <select id="filter">
   <option value="all">All Projects</option>
   <option value="3D Modeling">3D Modeling</option>
   <option value="VR">VR</option>
 </select>
 
+
 <select id="sort">
   <option value="newest">Newest First</option>
   <option value="oldest">Oldest First</option>
 </select>
-  <section id="projects">
+  <section id="project-list">
+    </div>
 
   <div class="project-card" data-category="3D Modeling"
      data-year="2025">
@@ -90,6 +94,7 @@
 
 
   </section>
+  </section>
 
   <section id="github">
   <h2>Latest GitHub Repositories</h2>
@@ -102,7 +107,26 @@
 
   <h2>Contact</h2>
   <p>You can contact me at:</p>
-  <p><strong>Email:</strong> Fatimah.qudihi@gmail.com</p>
+<form id="contact-form">
+  <input
+    type="text"
+    id="name"
+    placeholder="Your Name">
+
+  <input
+    type="email"
+    id="email"
+    placeholder="Your Email">
+
+  <textarea
+    id="message"
+    placeholder="Message">
+  </textarea>
+
+  <button type="submit">Send</button>
+
+  <p id="form-message"></p>
+</form>
 
 
   </section>

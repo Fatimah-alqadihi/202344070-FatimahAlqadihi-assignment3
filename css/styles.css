@@ -178,3 +178,19 @@ footer {
   visibility: hidden;
 }
 
+.project-controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.project-controls select {
+    width: 160px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
