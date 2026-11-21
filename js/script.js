@@ -62,7 +62,7 @@ toggleButtons.forEach(btn => {
 
 const repoContainer = document.getElementById("repo-container");
 
-fetch("https://api.github.com/users/YOUR_GITHUB_USERNAME/repos")
+fetch("https://api.github.com/users/Fatimah-alqadihi/repos")
   .then(response => response.json())
   .then(data => {
     data.slice(0, 5).forEach(repo => {
