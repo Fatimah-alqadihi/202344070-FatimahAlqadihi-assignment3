@@ -117,3 +117,39 @@ document.getElementById("project-list");
 
   projects.forEach(p => container.appendChild(p));
 }
+document
+.getElementById("contact-form")
+.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const name =
+    document.getElementById("name").value.trim();
+
+  const email =
+    document.getElementById("email").value.trim();
+
+  const message =
+    document.getElementById("message").value.trim();
+
+  const output =
+    document.getElementById("form-message");
+
+  if(!name || !email || !message){
+    output.textContent =
+      "Please fill all fields.";
+    return;
+  }
+
+  const emailPattern =
+  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(!emailPattern.test(email)){
+    output.textContent =
+      "Please enter a valid email.";
+    return;
+  }
+
+  output.textContent =
+    "Message submitted successfully!";
+});
