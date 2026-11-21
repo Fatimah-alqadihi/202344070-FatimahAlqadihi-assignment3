@@ -30,10 +30,22 @@
     I love experimenting with new tools just like building this portfolio.
   </p>
   </section>
+  <select id="filter">
+  <option value="all">All Projects</option>
+  <option value="3D Modeling">3D Modeling</option>
+  <option value="VR">VR</option>
+</select>
+
+<select id="sort">
+  <option value="newest">Newest First</option>
+  <option value="oldest">Oldest First</option>
+</select>
   <section id="projects">
      <h2>Projects</h2>
 
   <div class="project-card">
+    data-category="3D Modeling"
+     data-year="2025"
     <h3>Short poem animation</h3>
     <button class="toggle-btn">Show Details</button>
 
@@ -48,6 +60,8 @@
   
 
     <div class="project-card">
+      data-category="VR"
+     data-year="2025"
     <h3>Unity VR Interaction Demo</h3>
     <button class="toggle-btn">Show Details</button>
 
@@ -61,6 +75,8 @@
 
    <div class="project-card">  
       <h3>Palm Tree Exhibition</h3>
+      data-category="3D Modeling"
+     data-year="2024"
       <button class="toggle-btn">Show Details</button>
 
       <div class="project-details">

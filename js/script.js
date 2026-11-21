@@ -81,3 +81,39 @@ fetch("https://api.github.com/users/Fatimah-alqadihi/repos")
     repoContainer.innerHTML =
       "<p>Unable to load repositories at the moment.</p>";
   });
+  const filter = document.getElementById("filter");
+const sort = document.getElementById("sort");
+
+filter.addEventListener("change", updateProjects);
+sort.addEventListener("change", updateProjects);
+
+function updateProjects() {
+  let projects = [...document.querySelectorAll(".project-card")];
+
+  projects.forEach(project => {
+    const category = project.dataset.category;
+
+    if (
+      filter.value === "all" ||
+      category === filter.value
+    ) {
+      project.style.display = "block";
+    } else {
+      project.style.display = "none";
+    }
+  }
+
+  projects.sort((a, b) => {
+    const yearA = parseInt(a.dataset.year);
+    const yearB = parseInt(b.dataset.year);
+
+    return sort.value === "newest"
+      ? yearB - yearA
+      : yearA - yearB;
+  });
+
+  const container =
+    document.getElementById("projects");
+
+  projects.forEach(p => container.appendChild(p));
+}
