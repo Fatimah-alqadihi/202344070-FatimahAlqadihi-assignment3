@@ -153,3 +153,10 @@ document
   output.textContent =
     "Message submitted successfully!";
 });
+let seconds = 0;
+
+setInterval(() => {
+  seconds++;
+  document.getElementById("timer").textContent =
+    seconds;
+}, 1000);
